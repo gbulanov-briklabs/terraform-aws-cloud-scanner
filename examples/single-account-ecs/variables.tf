@@ -9,7 +9,7 @@ variable "name" {
 variable "tags" {
   type        = map(string)
   description = "Default tag for resource"
-  default     = {
+  default = {
     product = "deepfence-cloud-scanner"
   }
 }

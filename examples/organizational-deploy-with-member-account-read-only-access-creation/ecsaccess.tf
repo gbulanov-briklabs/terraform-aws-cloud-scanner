@@ -26,7 +26,7 @@ data "aws_iam_policy_document" "task_assume_role" {
 data "aws_iam_policy_document" "mem_acc_assume_role" {
   provider = aws.member
   statement {
-    effect  = "Allow"
+    effect = "Allow"
     actions = [
       "sts:AssumeRole",
     ]

@@ -31,7 +31,7 @@ module "ecs-service" {
   providers = {
     aws = aws.member
   }
-  is_organizational     = true
+  is_organizational = true
   organizational_config = {
     mem_acc_ecs_task_role_name = aws_iam_role.ccs_ecs_task_role.name
   }
